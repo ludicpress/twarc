@@ -21,7 +21,7 @@
 title: Jekyll Demo
 email: christopher.young@utoronto.ca
 description: >- # this means to ignore newlines until "baseurl:"
-  Build a Website with Jekyll and GitHub Pages workshop and documentation hosted on Github, built for the University of Toronto Mississauga Library..
+  Build a Website with Jekyll and GitHub Pages workshop and documentation hosted on Github, built for the University of Toronto Mississauga Library.
 baseurl: "/jekylldemo" # the subpath of your site, e.g. /blog
 url: "localhost:4000" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: ludicpress
