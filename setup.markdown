@@ -36,7 +36,19 @@ Your command prompt instance should now be a Bash instance. The colour of your c
 
 The first part updates the Bash repository lists and the second following the ```&&``` upgrades the Bash packages. At this point you may be asked to update service packets. If prompted select yes or type ```y``` and hit enter. This may take several minutes, so hang tight and wait for the prompt to reappear.
 
+When the prompt reappears we can check to make sure Bash was installed properly. In the command prompt type in the following command and his enter:
 
+```bash --version```
+
+If all went well, the following information should display on your machine:
+
+```GNU bash, version 4.4.20(1)-release (x86_64-pc-linux-gnu)  ```
+```Copyright (C) 2016 Free Software Foundation, Inc.  ```
+```License GPLv3+: GNU GPL version 3 or later <http://gnu.org/licenses/gpl.html>  ```
+```This is free software; you are free to change and redistribute it.  ```
+```There is NO WARRANTY, to the extent permitted by law.```
+
+At the time of writing this documentation Bash was at version 4.4.20.
 
 ## OS X Instructions
 On OS X, there are two ways to get wget and install it. The easiest is to install a package manager and use it to automatically install wget. There is a second method, discussed below, that involves compiling it.
