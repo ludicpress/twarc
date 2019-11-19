@@ -10,7 +10,7 @@ There are some fantastic resources out there to learn how to use static websites
 
 There are also some useful tutorials with a focus on digital research. [The Programming Historian](https://programminghistorian.org/) has one workshop on how to create a static website with Jekyll and GitHub pages, which most of this site's documentation is derived from:
 
-[Building a static website with Jekyll and GitHub Pages](https://programminghistorian.org/en/lessons/building-static-sites-with-jekyll-github-pages#github--github-pages-)
+* [Building a static website with Jekyll and GitHub Pages](https://programminghistorian.org/en/lessons/building-static-sites-with-jekyll-github-pages#github--github-pages-)
 
 ## Cheat Sheets
 There are several cheat sheets out there to help with essential Git, Markdown, and various other commands useful to creating Jekyll static websites and uploading them to GitHub:
