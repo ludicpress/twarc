@@ -22,7 +22,7 @@ You have created your first static site, congratulations! Obviously, there is st
 ## GitHub
 Before we can use Git to upload our website folder to GitHub, we need to create a GitHub user account. A GitHub user account will let you host your website for free on GitHub. In addition, GitHub will also let you keep track of versions of the website and its writing as it grows or changes over time.
 
-Visit GitHub.com and click on the “Sign up” button on the upper right. Write your desired username. This will be visible to others, identify you on GitHub, and also be part of your site’s URL; for example, this author’s GitHub username is ludcipress and hia demo statis site’s URL is http://ludicpress.github.io/statissites/. (Note you can also purchase your own domain name and use it for this site, but that won’t be covered in this workshop). Also write your desired email address and password, then click “Create an account”.
+Visit GitHub.com and click on the “Sign up” button on the upper right. Write your desired username. This will be visible to others, identify you on GitHub, and also be part of your site’s URL; for example, this author’s GitHub username is ludcipress and hia demo statis site’s URL is http://ludicpress.github.io/jekylldemo/. (Note you can also purchase your own domain name and use it for this site, but that won’t be covered in this workshop). Also write your desired email address and password, then click “Create an account”.
 
 On the next page, click the “Choose” button next to the “Free” plan option, ignore the “Help me set up an organization next” checkbox, and click “Finish sign up”.
 
@@ -31,9 +31,27 @@ Optional: Visit https://github.com/settings/profile to add a full name (can be y
 Now that you have a GitHub account we can upload your website folder to GitHub using Git in the command line. However, we first need to create a new repository in GitHub so we have somewhere to send our website folder. While still logged in to GitHub you can add a new repository by clicking on the ```+``` icon in the top right-hand side of the page. Select the option ```new repository```. In the new repository, use the same name as the project folder and select the option ```Public``` before clicking the ```Create repository``` button. This ensures your site will be live when you upload the website folder. Keep the next page open as you'll need it for the next step.
 
 ## Git
-Now that we have a repository for our website folder to go into we need to use Git to make sure 
+Now that we have a repository we need to use Git to upload our website folder. On the GitHub page after you created the repository there should be a link that looks something like this:
 
-## Markdown
+```https://github.com/ludicpress/jekylldemo.git```
+
+This is the web address that your website folder will use to push its contents to the repository on GitHub. Copy this link and go back into your command line interface.
+
+In your command line, type and enter:
+
+```git remote add origin [your copied URL]```
+
+Mine looks like this:
+
+```git remote add origin https://github.com/ludipress/jekylldemo.git```
+
+You then need to push your branch to GitHub with the following command:
+
+```git push origin master```
+
+Wait a few moments for the task to be complete. Once your command prompt reappears go back into your GitHub repository and refresh your webpage. The website folder with all your files should now be there.
+
+## Edit your Static Site
 
 
 ## Final Thoughts
