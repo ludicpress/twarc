@@ -7,7 +7,38 @@ permalink: /setup/
 Before we start the workshop component of how to build a static website with Jekyll and GitHub for digital research there is some preliminary setup we have to complete on your computer. There are several ways to install the different components we need to create a static Jekyll website on GitHub. We will approach setup through the command line. Depending on which operating system you use, setup can be straightforward or the most time consuming aspect of learning how to build a Jekyll website on GitHub pages. Below are installation instructions for Linux, Windows, and OS X users. Once Jekyll is installed on each system, the instructions will be the same for every user participating in the workshop.
 
 ## Linux Instructions
+If you are using a Linux operating system, the instructions for Jekyll installation are relatively straightforward compared to Windows and OS X. Before we install Jekyll, we need to make sure we have all the required dependencies--specifically, Ruby and its Gems. Ruby is the programming language that will enable us to install Jekyll and create our static website.
 
+Open the command line interface on your Linux system and type in the following command and hit enter:
+
+```sudo apt-get install ruby-full build-essential zlib1g-dev```
+
+It is best to avoid installing Ruby Gems as the root user. Therefore, we need to set up a gem installation directory for your user account. The following commands will add environment variables to your ```~/.bashrc``` file to configure the gem installation path. Type in the following commands sequentially and hit enter:
+
+```echo '# Install Ruby Gems to ~/gems' >> ~/.bashrc```  
+```echo 'export GEM_HOME="$HOME/gems"' >> ~/.bashrc```  
+```echo 'export PATH="$HOME/gems/bin:$PATH"' >> ~/.bashrc```  
+```source ~/.bashrc```  
+
+Now that we have configured a path for your Jekyll installation we can complete the setup with the following command:
+
+```gem install jekyll bundler```
+
+When the prompt returns we can check to see if Jekyll is running smoothly by entering the following command:
+
+```jekyll -v```
+
+If Jekyll is not installed type in the following command and hit enter:
+
+```sudo apt install jekyll```
+
+If prompted, type ```y``` and hit enter.
+
+Try the version command again and the following message should now display in your prompt:
+
+```jekyll 4.0.0```
+
+At the time of writing Jekyll was upgraded to 4.0, but there may be a later version depending on when you read this documentation. Now that you have completed the setup and installation of jekyll you can move on to the workshop!
 
 ## Windows Instructions
 To install Jekyll we have to activate the Windows Subsystem for Linux (WSL) and install a Linux distro (i.e., command line). For this workshop we will use the Ubuntu application on Windows, but first we have to activite the WSL.
