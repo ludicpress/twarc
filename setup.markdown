@@ -127,25 +127,23 @@ Try the version command again and the following message should now display in yo
 At the time of writing Jekyll was upgraded to 4.0, but there may be a later version depending on when you read this documentation. Now that you have completed the setup and installation of jekyll you can move on to the workshop!
 
 ## OS X Instructions
-On OS X, there are two ways to get wget and install it. The easiest is to install a package manager and use it to automatically install wget. There is a second method, discussed below, that involves compiling it.
+To install Jekyll on OS X there are several dependencies we need to install, including Apple's Command Line Tools and Homebrew. This requires downloading XCode. If you have the App Store, you should be able to just download XCode.  If not, the following instructions will work.
 
-Both, however, require that you install Apple’s ‘Command Line Tools’ to use properly. This requires downloading XCode. If you have the ‘App Store’, you should be able to just download XCode via this link.  If not, the following instructions will work.
+To download this, go to the Apple Developer website, register as a developer, and then in the downloads for Apple developers section you will need to find the correct version. If not, you will need to click on the link: “Looking for additional developer tools? View Downloads.”
 
-To download this, go to the Apple Developer website, register as a developer, and then in the downloads for Apple developers section you will need to find the correct version. If you are on the most recent version, Lion as of July 2012, you can use the main link. If not, you will need to click on the link: “Looking for additional developer tools? View Downloads.”
+After logging in with your free developer credentials, you will see a long list. Type ```xcode``` in the search bar and find a version that is compatible with your operating system version. This may take some clicking around to find the right version for you. For example, Xcode 3.2 is the version for OS X 10.6 Snow Leopard, 3.0 is the version for OS X 10.5 Leopard, etc.
 
-After logging in with your free developer credentials, you will see a long list. Type xcode in the search bar and find a version that is compatible with your operating system version. This may take some clicking around to find the right version for you. For example, Xcode 3.2 is the version for OS X 10.6 Snow Leopard, 3.0 is the version for OS X 10.5 Leopard, etc.
-
-It is a big download, and will take some time. Once you have the file, install it.
+It is a big download, and will take some time. Once you have the file, install it (when I timed the download it took almost 15 minutes!).
 
 You will need to install the ‘Command Line Tools’ kit in XCode. Open up the ‘Preferences’ tab, click on ‘Downloads,’ and then click ‘Install’ next to Command Line Tools. We are now ready to install a package manager.
 
-The easiest package manager to install is Homebrew. Go to https://brew.sh and review the instructions. There are many important commands, like wget, that are not included by default in OS X. This program facilitates the downloading and installation of all required files.
+The easiest package manager to install is Homebrew. Go to https://brew.sh and review the instructions. There are many important commands, like Jekyll, that are not included by default in OS X. This program facilitates the downloading and installation of all required files.
 
 To install Homebrew, open up your terminal window and type the following:
 
 ```/usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"```
 
-This uses the ruby programming language, built into OS X, to install Homebrew. To see if the installation worked, type the following into your terminal window:
+This uses the ruby programming language, built into OS X, to install Homebrew. If prompted to press ```RETURN``` hit returnTo see if the installation worked, type the following into your terminal window:
 
 ```brew```
 
@@ -153,6 +151,66 @@ A list of documentation options should appear if it has been installed. We have 
 
 ```brew doctor```
 
-With Homebrew installed, we now have to install wget. This is now an easy step.
+With Homebrew installed, we now have to install Ruby. Ruby is the programming language that will enable us to install Jekyll and create our static website. Type in the following command and hit enter:
 
-```brew install 
+```brew install ruby```
+
+Next we need to add the brew ruby path to your shell configuration. Type in the following command and hit enter:
+
+```export PATH=/usr/local/opt/ruby/bin:$PATH```
+
+Then type in the following command and hit enter to make sure the installation path has changed:
+
+```which ruby```
+
+A print out of the following message should appear in your command prompt:
+
+```# /usr/local/opt/ruby/bin/ruby```
+
+Then type in the following command to make sure Ruby has installed to the latest version:
+
+```ruby -v```
+
+A print out of the following message should appear in your command prompt:
+
+```ruby 2.6.5p114 (2019-10-01 revision 67812)```
+
+Now that we running a stable version of Ruby we can install Homebrew using rbenv to manage our Ruby version specific to Jekyll. Type in and enter the following commands sequentially to install rbenv:
+
+First, we need to install Homebrew. Hit "RETURN" when prompted:  
+```/usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"```  
+
+Secomd, we need Homebrew to install rbenv:  
+```brew install rbenv```  
+
+Third, we need to setup rbenv integration to your shell:
+```rbenv init```  
+
+Finally, we need to check our installation to make sure it's working properly:  
+```curl -fsSL https://github.com/rbenv/rbenv-installer/raw/master/bin/rbenv-doctor | bash```
+
+Now that Homebrew has installed rbenv, we need rbenv to install and run the latest version of our for us so we can instal Jekyll. Type in the following commands sequentially and hit enter. Note, you will need to type in the version of Ruby you installed earlier:
+
+First,  
+```rbenv install 2.6.5```
+
+Second,  
+```rbenv global 2.6.5```
+
+Third, check the version to make sure it's running:  
+```ruby-v```
+
+If all went according to plan your printout in the terminal should read:  
+```ruby 2.6.5p114 (2019-10-01 revision 67812)```
+
+Alright, we're in the final stretch! Now we need to install a local version of Jekyll to the Ruby version we are using with Ruby's gem. Type in and enter the following command:
+
+```gem install --user-install bundler jekyll```
+
+Next, we append your path file with the following command. Note, the digits following the ```ruby/``` path are for the version you installed earlier, so you may need to edit it according to the version you are using:
+
+```export PATH=$HOME/.gem/ruby/2.6.5/bin:$PATH```
+
+
+
+
