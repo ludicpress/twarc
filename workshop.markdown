@@ -51,10 +51,17 @@ You then need to push your branch to GitHub with the following command:
 
 Wait a few moments for the task to be complete. Once your command prompt reappears go back into your GitHub repository and refresh your webpage. The website folder with all your files should now be there.
 
-But wait, you have one last step to complete before your site is live. In GitHub, click on branch and type in a new branch labelled ```gh-pages``` in the name field and then click . Make this branch your default branch so any changes you make are made to your website and not the original master file you uploaded. 
+But wait, you have one last step to complete before your site is live. In GitHub, click on branch and type in a new branch labelled ```gh-pages``` in the name field and then click ```Create branch```. Make sure this branch is your default branch so any changes you make are made to your website and not the original master file you uploaded. 
+
+You can now visit your static site. The URL of your website will look like the following:
+
+```username.github.io/websitefolder/```
+
+My site looks like:
+```ludicpress.github.io/jekylldemo/```
 
 ## Edit your Static Site
-
+Congratulations, your static site is live! But wait, there is so much more you can do! In this next section I will give an overview of how to navigate your website folder files and edit those files which represent your web pages, posts, and templates.
 
 ## Final Thoughts
 As you become increasingly comfortable with the command line, you will find wget a helpful addition to your digital research toolkit. If there is an entire set of archival documents that you want to download for text mining, if they’re arranged in a directory and are all together (which is not as common as one might think), a quick wget command will be quicker than scraping the links with Python. Similarly, you can then begin downloading things directly from your command line: programs, files, backups, etc. You will soon find that wget may be a first option for you to research all kinds of web content!
