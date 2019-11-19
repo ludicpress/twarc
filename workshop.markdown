@@ -51,6 +51,8 @@ You then need to push your branch to GitHub with the following command:
 
 Wait a few moments for the task to be complete. Once your command prompt reappears go back into your GitHub repository and refresh your webpage. The website folder with all your files should now be there.
 
+But wait, you have one last step to complete before your site is live. In GitHub, click on branch and type in a new branch labelled ```gh-pages``` in the name field and then click . Make this branch your default branch so any changes you make are made to your website and not the original master file you uploaded. 
+
 ## Edit your Static Site
 
 
