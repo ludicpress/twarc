@@ -26,7 +26,16 @@ Click install and wait for the Ubuntu application for Windows to install. Once t
 
 When Ubuntu opens for the first time you will be propted to create a username and password. Create your username and hit enter. Create your password and hit enter. A re-enter password prompt will appear and you re-enter your password. Your username and password should now be created. Whenever you open Ubuntu and try to install software you will be prompted for your username and password.
 
-Now that Ubuntu is installed and you have created a username and password you can check to see if wget is ready to go as it should already be installed with Ubuntu.
+The next few steps are relatively time consuming, but they are necessary to make sure we install Ruby and then Jekyll on to your computer using Bash for Windows. In the Ubuntu command prompt type in the following command and hit enter:
+
+```bash```
+
+Your command prompt instance should now be a Bash instance. The colour of your command prompt should have changed to another colour (in my case, green). Next we need to update our Bash repository lists and packages. In the command prompt type in the following command and hit enter:
+
+```sudo apt-get update -y && sudo apt-get upgrade -y```
+
+The first part updates the Bash repository lists and the second following the ```&&``` upgrades the Bash packages. At this point you may be asked to update service packets. If prompted select yes or type ```y``` and hit enter. This may take several minutes, so hang tight and wait for the prompt to reappear.
+
 
 
 ## OS X Instructions
