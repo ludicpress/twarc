@@ -37,7 +37,20 @@ Now that we have a repository we need to use Git to upload our website folder. O
 
 This is the web address that your website folder will use to push its contents to the repository on GitHub. Copy this link and go back into your command line interface.
 
+Next we need to go into the folder using the ```cd``` command:
+
+```cd jekylldemo/
+
 In your command line, type and enter:
+
+```git config --global user.email "you@example.com"
+```git config --global user.name "your name"
+
+We need to track our files:
+
+```git add .```
+
+This tracks all files in folder:
 
 ```git remote add origin [your copied URL]```
 
@@ -45,9 +58,11 @@ Mine looks like this:
 
 ```git remote add origin https://github.com/ludipress/jekylldemo.git```
 
-You then need to push your branch to GitHub with the following command:
+You will then need to initialize your first commit:
 
-```git push origin master```
+```git push -u origin master```
+
+You will be prompted to sign in with your username and password
 
 Wait a few moments for the task to be complete. Once your command prompt reappears go back into your GitHub repository and refresh your webpage. The website folder with all your files should now be there.
 
