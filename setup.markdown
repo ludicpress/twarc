@@ -4,15 +4,13 @@ title: Setup
 permalink: /setup/
 ---
 
-Before we begin with the workshop component of how to build a static website with Jekyll and GitHub for digital research there is some preliminary setup we have to complete on your computer. There are several ways to install the different components we need to create a static Jekyll website on GitHub. However
-
-Since  is used through the command line, we have to install packages onto your computer for it work. Depending on which operating system you use, setup can be straightforward or the most time consuming aspect of learning how to use wget. Below are installation instructions for Linux, Windows, and OS X users. Once wget is installed on each system, the instructions will be the same for every user participating in the workshop.
+Before we start the workshop component of how to build a static website with Jekyll and GitHub for digital research there is some preliminary setup we have to complete on your computer. There are several ways to install the different components we need to create a static Jekyll website on GitHub. We will approach setup through the command line. Depending on which operating system you use, setup can be straightforward or the most time consuming aspect of learning how to build a Jekyll website on GitHub pages. Below are installation instructions for Linux, Windows, and OS X users. Once Jekyll is installed on each system, the instructions will be the same for every user participating in the workshop.
 
 ## Linux Instructions
 
 
 ## Windows Instructions
-To install wget we have to activate the Windows Subsystem for Linux (WSL) and install a Linux distro (i.e., command line). For this workshop we will use the Ubuntu application on Windows, but first we have to activite the WSL.
+To install Jekyll we have to activate the Windows Subsystem for Linux (WSL) and install a Linux distro (i.e., command line). For this workshop we will use the Ubuntu application on Windows, but first we have to activite the WSL.
 
 To activate the WSL, open Powershell as an Administrator. To do this, type in Powershell in the Windows search bar in the bottom left corner of your screen. The application Windows Powershell Ise will appear. On the right-hand side of the window will be the option 'Run as administrator'. Select Run as administrator and enter your administrative login credentials if prompted. If you do not run Powershell as an administrator the next step will not work.
 
@@ -26,17 +24,17 @@ Once your computer has restarted, open the Microsoft Store. You can access the M
 
 Click install and wait for the Ubuntu application for Windows to install. Once the application has installed, type Ubuntu in the Windows search bar and open the application. Note, you do not need to Run as administrator for this application. The Ubuntu application will take approximately 5 to 10 minutes to install, so do not worry if it does not open right away.
 
-When Ubuntu opens for the first time you will be propted to create a username and password. Create your username and hit enter. Create your password and hit enter. A re-enter password prompt will appear and you re-enter your password. Your username and password should now be created. Whenever you open Ubuntu and try to install software you will be prompted for your username and password.
+When Ubuntu opens for the first time you will be prompted to create a username and password. Create your username and hit enter. Create your password and hit enter. A re-enter password prompt will appear and re-enter your password. Your username and password should now be created. Whenever you open Ubuntu and try to install software you will be prompted for your username and password.
 
 The next few steps are relatively time consuming, but they are necessary to make sure we install Ruby and then Jekyll on to your computer using Bash for Windows. In the Ubuntu command prompt type in the following command and hit enter:
 
 ```bash```
 
-Your command prompt instance should now be a Bash instance. The colour of your command prompt should have changed to another colour (in my case, green). Next we need to update our Bash repository lists and packages. In the command prompt type in the following command and hit enter:
+Your command prompt instance should now be a Bash instance. The colour of your command prompt will likely have changed to another colour (in my case, green). Next we need to update our Bash repository lists and packages to make sure our instance of Bash is up-to-date. In the command prompt type in the following command and hit enter:
 
 ```sudo apt-get update -y && sudo apt-get upgrade -y```
 
-The first part updates the Bash repository lists and the second following the ```&&``` upgrades the Bash packages. At this point you will be asked to restart services during package upgrades without asking. When prompted select ```<Yes>```and hit enter. This may take several minutes (almost 15 minutes when I timed it!), so hang tight and wait for the prompt to reappear.
+The first part before the ```&&``` updates the Bash repository lists and the second part following the ```&&``` upgrades the Bash packages. At this point you will be asked to restart services during package upgrades without asking. When prompted select ```<Yes>```and hit enter. When you select ```<Yes>``` it means you won't be asked to install every single package, and there are a lot of packages! This may take several minutes (almost 15 minutes when I timed it!), so hang tight and wait for the prompt to reappear.
 
 When the prompt reappears we can check to make sure Bash was installed properly. In the command prompt type in the following command and his enter:
 
@@ -50,9 +48,11 @@ If all went well, the following information should display on your machine:
 ```This is free software; you are free to change and redistribute it.```  
 ```There is NO WARRANTY, to the extent permitted by law.```
 
-At the time of writing this documentation Bash was at version 4.4.20.
+At the time of writing this documentation Bash was at the latest version 4.4.20. If your computer does not install to the latest version it may be that you do not have full privileges on the computer you are using.
 
-Next we need to install Ruby. Ruby is the programming language that will enable us to install Jekyll and create our static website. To install Ruby we will use a repository from BrightBox, which hosts optimized versions of Ruby for Ubuntu. In the command prompt type in the following commands and hit enter. Remember to wait for the prompt before entering each line of code.
+Next we need to install Ruby. Ruby is the programming language that will enable us to install Jekyll and create our static website. To install Ruby we will use a repository from BrightBox, which hosts optimized versions of Ruby for Ubuntu--this is perfect for us. 
+
+In the command prompt type in the following commands and hit enter. Remember to wait for the prompt before entering each line of code.
 
 First:  
 ```sudo apt-add-repository ppa:brightbox/ruby-ng```
@@ -63,13 +63,13 @@ Second:
 And third:  
 ```sudo apt-get install ruby2.5 ruby2.5-dev build-essential dh-autoreconf```
 
-If prompted hit ```[ENTER]```, type ```y```, or select ```<YES>``` and hit enter. This may take several minutes to complete the whole installation process.
+If prompted, hit ```[ENTER]```, type ```y```, or select ```<YES>``` and hit enter. This may take several minutes to complete the whole installation process. By this point, you are probably tired of waiting, but hold tight as we're getting to the end of the setup!
 
 Next, we need to install Ruby:
 
 ```apt install ruby```
 
-If prompted select yes or type ```y``` and hit enter.
+If prompted select yes or type ```y``` and hit enter. Note, you may need to use sudo before this command and the following commands if you receive a message stating you do not have privileges to make the necessary changes.
 
 Now that Ruby is installed we need to update our gems. Gems are packages within Ruby that make it easy for us to install programs, like Jekyll, with a simple command. To update our gems, type the following into the command prompt and hit enter:
 
