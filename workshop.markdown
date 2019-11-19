@@ -70,11 +70,11 @@ You will then need to initialize your first commit:
 
 ```git push -u origin master```
 
-You will be prompted to sign in with your username and password
+You will be prompted to sign in with your username and password for your GitHub account.
 
 Wait a few moments for the task to be complete. Once your command prompt reappears go back into your GitHub repository and refresh your webpage. The website folder with all your files should now be there.
 
-But wait, you have one last step to complete before your site is live. In GitHub, click on branch and type in a new branch labelled ```gh-pages``` in the name field and then click ```Create branch```. Make sure this branch is your default branch so any changes you make are made to your website and not the original master file you uploaded. 
+But wait! You have one last step to complete before your site is live. In GitHub, click on branch and type in a new branch labelled ```gh-pages``` in the name field and then click ```Create branch```. Make sure this branch is your default branch so any changes you make are made to your website and not the original master file you uploaded. 
 
 You can now visit your static site. The URL of your website will look like the following:
 
@@ -84,7 +84,7 @@ My site looks like:
 ```ludicpress.github.io/jekylldemo/```
 
 ## Edit your Static Site  
-Congratulations, your static site is live! But wait, there is so much more you can do! It also may not look much like a website if some of the settings are missing from the ```_config.yml``` file. In this next section I will give an overview of how to navigate your website folder files and edit those files which represent your web pages, posts, and templates.
+Congratulations, your static site is live! But there is still so much more you can do! It also may not look much like a website if some of the settings are missing from the ```_config.yml``` file. In this next section I will give an overview of how to navigate your website folder files and edit those files which represent your web pages, posts, and templates.
 
 From now on all edits you make can be done in the GitHub interface. The first thing we need to go is edit the ```_config.yml``` file and make sure some of our build settings are good. Open up the file and click on the little pencil icon to edit the file. Here you can edit your ```Site Settings``` and ```Build Settings```.
 
@@ -107,7 +107,8 @@ Next we need to check the Build Settings. This is usually the reason why your si
 
 If not, copy and paste the above and put it just below the build settings heading. Make sure to commit your changes. Wait a minute or so and refresh the website. Your website changes should now be visible and look like a minimal static website.
 
-## Markdown
+## Edit and Create Content
+
 
 
 ## Final Thoughts
