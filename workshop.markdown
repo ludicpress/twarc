@@ -28,8 +28,10 @@ On the next page, click the “Choose” button next to the “Free” plan opti
 
 Optional: Visit https://github.com/settings/profile to add a full name (can be your real name, GitHub user name, or something else) and other public profile information, if desired.
 
-## Git
+Now that you have a GitHub account we can upload your website folder to GitHub using Git in the command line. However, we first need to create a new repository in GitHub so we have somewhere to send our website folder. While still logged in to GitHub you can add a new repository by clicking on the ```+``` icon in the top right-hand side of the page. Select the option ```new repository```. In the new repository, use the same name as the project folder and select the option ```Public``` before clicking the ```Create repository``` button. This ensures your site will be live when you upload the website folder. Keep the next page open as you'll need it for the next step.
 
+## Git
+Now that we have a repository for our website folder to go into we need to use Git to make sure 
 
 ## Markdown
 
