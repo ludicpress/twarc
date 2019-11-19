@@ -155,62 +155,32 @@ With Homebrew installed, we now have to install Ruby. Ruby is the programming la
 
 ```brew install ruby```
 
-Next we need to add the brew ruby path to your shell configuration. Type in the following command and hit enter:
+Don’t forget to wait until the command prompt appears again to type in the following command which will update our gems to install Jekyll:
 
-```export PATH=/usr/local/opt/ruby/bin:$PATH```
+```gem install rubygems-update```
 
-Then type in the following command and hit enter to make sure the installation path has changed:
+If you get a permissions error at this point, entering ```usr/local/bin/gem install rubygems-update``` instead of the command above may help.
 
-```which ruby```
+Next, we need to install NodeJS, which is a development tool that makes things like Javascript run faster. Type in the following command and hit enter:
 
-A print out of the following message should appear in your command prompt:
+```brew install node```
 
-```# /usr/local/opt/ruby/bin/ruby```
+We're now in the final stretch where we can use our gems to install Jekyll. Type in the following command and hit enter:
 
-Then type in the following command to make sure Ruby has installed to the latest version:
+```gem install jekyll```
 
-```ruby -v```
+If you get a permissions error at this point, entering ```usr/local/bin/gem install jekyll``` instead of the command above may help.
 
-A print out of the following message should appear in your command prompt:
+At the command line, type in the following command and hit enter to install Jekyll on your machine:
 
-```ruby 2.6.5p114 (2019-10-01 revision 67812)```
+```gem install jekyll bundler```
 
-Now that we running a stable version of Ruby we can install Homebrew using rbenv to manage our Ruby version specific to Jekyll. Type in and enter the following commands sequentially to install rbenv:
+Finally, let's check our version of Jekyll to make sure it is running:
 
-First, we need to install Homebrew. Hit "RETURN" when prompted:  
-```/usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"```  
+```jekyll -v```
 
-Secomd, we need Homebrew to install rbenv:  
-```brew install rbenv```  
+If all has gone according to plan you should see the following print out in your terminal:
 
-Third, we need to setup rbenv integration to your shell:
-```rbenv init```  
+```jekyll 4.0.0```
 
-Finally, we need to check our installation to make sure it's working properly:  
-```curl -fsSL https://github.com/rbenv/rbenv-installer/raw/master/bin/rbenv-doctor | bash```
-
-Now that Homebrew has installed rbenv, we need rbenv to install and run the latest version of our for us so we can instal Jekyll. Type in the following commands sequentially and hit enter. Note, you will need to type in the version of Ruby you installed earlier:
-
-First,  
-```rbenv install 2.6.5```
-
-Second,  
-```rbenv global 2.6.5```
-
-Third, check the version to make sure it's running:  
-```ruby-v```
-
-If all went according to plan your printout in the terminal should read:  
-```ruby 2.6.5p114 (2019-10-01 revision 67812)```
-
-Alright, we're in the final stretch! Now we need to install a local version of Jekyll to the Ruby version we are using with Ruby's gem. Type in and enter the following command:
-
-```gem install --user-install bundler jekyll```
-
-Next, we append your path file with the following command. Note, the digits following the ```ruby/``` path are for the version you installed earlier, so you may need to edit it according to the version you are using:
-
-```export PATH=$HOME/.gem/ruby/2.6.5/bin:$PATH```
-
-
-
-
+At the time of writing Jekyll was upgraded to 4.0, but there may be a later version depending on when you read this documentation. Now that you have completed the setup and installation of jekyll you can move on to the workshop!
