@@ -12,8 +12,9 @@ There are also some useful tutorials with a focus on digital research. [The Prog
 
 [Building a static website with Jekyll and GitHub Pages](https://programminghistorian.org/en/lessons/building-static-sites-with-jekyll-github-pages#github--github-pages-)
 
-## Useful Cheat Sheets
+## Cheat Sheets
+There are several cheat sheets out there to help with essential Git, Markdown, and various other commands useful to creating Jekyll static websites and uploading them to GitHub:
 
-[Atlassian Basic Git Commands](https://confluence.atlassian.com/bitbucketserver/basic-git-commands-776639767.html)  
-[GitHub Cheat Sheet](https://github.github.com/training-kit/downloads/github-git-cheat-sheet.pdf)  
-[GitHub flavoured Markdown syntax](https://guides.github.com/pdfs/markdown-cheatsheet-online.pdf)  
+* [Atlassian Basic Git Commands](https://confluence.atlassian.com/bitbucketserver/basic-git-commands-776639767.html)  
+* [GitHub Cheat Sheet](https://github.github.com/training-kit/downloads/github-git-cheat-sheet.pdf)  
+* [GitHub flavoured Markdown syntax](https://guides.github.com/pdfs/markdown-cheatsheet-online.pdf)  
