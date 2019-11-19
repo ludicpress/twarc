@@ -61,7 +61,7 @@ Second:
 And third:  
 ```sudo apt-get install ruby2.5 ruby2.5-dev build-essential dh-autoreconf```
 
-If prompted hit ```[ENTER]``` or type ```y```. This may take several minutes to complete the whole installation process.
+If prompted hit ```[ENTER]```, type ```y```, or select ```<YES>``` and hit enter. This may take several minutes to complete the whole installation process.
 
 Next, we need to install Ruby:
 
@@ -81,7 +81,13 @@ When the prompt returns we can check to see if Jekyll is running smoothly by ent
 
 ```jekyll -v```
 
-The following message should display in your prompt:
+If Jekyll is not installed type in the following command and hit enter:
+
+```sudo apt install jekyll```
+
+If prompted, type ```y``` and hit enter.
+
+Try the version command again and the following message should now display in your prompt:
 
 ```jekyll 4.0.0```
 
