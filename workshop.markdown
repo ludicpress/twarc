@@ -19,12 +19,17 @@ This command told Jekyll to create a new site by installing all the necessary fi
 
 You have created your first static site, congratulations! Obviously, there is still a lot more work to do in terms of adding content, but now we can move onto the next stage and add the site to GitHub using Git.
 
-## Git and GitHub
-A GitHub user account will let you host your website (make it available for others to visit) for free on GitHub (we’ll cover how in a later step). As a bonus, it will also let you keep track of versions of the website and its writing as it grows or changes over time.
+## GitHub
+Before we can use Git to upload our website folder to GitHub, we need to create a GitHub user account. A GitHub user account will let you host your website for free on GitHub. In addition, GitHub will also let you keep track of versions of the website and its writing as it grows or changes over time.
 
-Visit GitHub.com and click on the “Sign up” button on the upper right. Write your desired username. This will be visible to others, identify you on GitHub, and also be part of your site’s URL; for example, the author’s GitHub username is amandavisconti and her demo Jekyll site’s URL is http://amandavisconti.github.io/JekyllDemo/. (Note you can also purchase your own domain name and use it for this site, but that won’t be covered in this tutorial). Also write your desired email address and password, then click “Create an account”.
+Visit GitHub.com and click on the “Sign up” button on the upper right. Write your desired username. This will be visible to others, identify you on GitHub, and also be part of your site’s URL; for example, this author’s GitHub username is ludcipress and hia demo statis site’s URL is http://ludicpress.github.io/statissites/. (Note you can also purchase your own domain name and use it for this site, but that won’t be covered in this workshop). Also write your desired email address and password, then click “Create an account”.
+
 On the next page, click the “Choose” button next to the “Free” plan option, ignore the “Help me set up an organization next” checkbox, and click “Finish sign up”.
+
 Optional: Visit https://github.com/settings/profile to add a full name (can be your real name, GitHub user name, or something else) and other public profile information, if desired.
+
+## Git
+
 
 ## Markdown
 
