@@ -140,4 +140,4 @@ Instead of ```page``` you insert ```post``` in the layout section. It's then imp
 As with pages, you can insert, text, links and what you like following the Markdown syntax.
 
 ## Final Thoughts
-
+There is still plenty more to learn with Jekyll and GitHub pages. There are also dozens, if not hundreds, of themes available to use instead of the Minima theme that comes with this tutorial. In addition, there are many digital research groups creating static page themes in Jekyll, such as the [Minimal Computing](https://github.com/minicomp) for digital editions, digital exhibits, and a range of other static sites for humanities and social science projects. If this is your first time with static sites, don't be dismayed by the learning curve or the simplicity. The payoff can be great depending on your digital research goals and projects.
