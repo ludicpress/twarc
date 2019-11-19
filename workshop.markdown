@@ -43,7 +43,7 @@ Next we need to go into the website folder using the ```cd``` command:
 
 Next we need to track your files, but the terminal needs to know who is doing the tracking. In your command line, type and enter:
 
-```git config --global user.email "you@example.com"```
+```git config --global user.email "you@example.com"```  
 ```git config --global user.name "your name"```
 
 Next we need to initialize our webfolder into a Git repository using the following command:
