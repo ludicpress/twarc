@@ -76,7 +76,16 @@ My site looks like:
 ```ludicpress.github.io/jekylldemo/```
 
 ## Edit your Static Site
-Congratulations, your static site is live! But wait, there is so much more you can do! In this next section I will give an overview of how to navigate your website folder files and edit those files which represent your web pages, posts, and templates.
+Congratulations, your static site is live! But wait, there is so much more you can do! It also may not look much like a website if some of the settings are missing from the ```_config.yml``` file. In this next section I will give an overview of how to navigate your website folder files and edit those files which represent your web pages, posts, and templates.
+
+From now on all edits you make can be done in the GitHub interface. The first thing we need to go is edit the ```_config.yml``` file and make sure some of our build settings are good. Open up the file and click on the little pencil icon to edit the file. Here you can edit your ```Site Settings``` and ```Build Settings```. In the site settings you can edit the fields, but in the build settings we need to make sure your site is working properly.
+
+You should see the following information in the build settings:
+
+
+If not, copy and paste the above and put it just below the build settings heading.
+
+
 
 ## Final Thoughts
 As you become increasingly comfortable with the command line, you will find wget a helpful addition to your digital research toolkit. If there is an entire set of archival documents that you want to download for text mining, if they’re arranged in a directory and are all together (which is not as common as one might think), a quick wget command will be quicker than scraping the links with Python. Similarly, you can then begin downloading things directly from your command line: programs, files, backups, etc. You will soon find that wget may be a first option for you to research all kinds of web content!
