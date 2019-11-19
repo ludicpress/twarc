@@ -34,7 +34,7 @@ Your command prompt instance should now be a Bash instance. The colour of your c
 
 ```sudo apt-get update -y && sudo apt-get upgrade -y```
 
-The first part updates the Bash repository lists and the second following the ```&&``` upgrades the Bash packages. At this point you may be asked to update service packets. If prompted select yes or type ```y``` and hit enter. This may take several minutes, so hang tight and wait for the prompt to reappear.
+The first part updates the Bash repository lists and the second following the ```&&``` upgrades the Bash packages. At this point you will be asked to restart services during package upgrades without asking. When prompted select ```<Yes>```and hit enter. This may take several minutes (almost 10 minutes when I timed it!), so hang tight and wait for the prompt to reappear.
 
 When the prompt reappears we can check to make sure Bash was installed properly. In the command prompt type in the following command and his enter:
 
