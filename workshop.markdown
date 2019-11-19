@@ -14,5 +14,8 @@ For this workshop we are going to build your Jekyll site and then upload it to G
 ## Git and GitHub
 
 
+## Markdown
+
+
 ## Final Thoughts
 As you become increasingly comfortable with the command line, you will find wget a helpful addition to your digital research toolkit. If there is an entire set of archival documents that you want to download for text mining, if they’re arranged in a directory and are all together (which is not as common as one might think), a quick wget command will be quicker than scraping the links with Python. Similarly, you can then begin downloading things directly from your command line: programs, files, backups, etc. You will soon find that wget may be a first option for you to research all kinds of web content!
