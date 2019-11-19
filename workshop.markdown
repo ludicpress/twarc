@@ -75,16 +75,31 @@ You can now visit your static site. The URL of your website will look like the f
 My site looks like:
 ```ludicpress.github.io/jekylldemo/```
 
-## Edit your Static Site
+## Edit your Static Site  
 Congratulations, your static site is live! But wait, there is so much more you can do! It also may not look much like a website if some of the settings are missing from the ```_config.yml``` file. In this next section I will give an overview of how to navigate your website folder files and edit those files which represent your web pages, posts, and templates.
 
-From now on all edits you make can be done in the GitHub interface. The first thing we need to go is edit the ```_config.yml``` file and make sure some of our build settings are good. Open up the file and click on the little pencil icon to edit the file. Here you can edit your ```Site Settings``` and ```Build Settings```. In the site settings you can edit the fields, but in the build settings we need to make sure your site is working properly.
+From now on all edits you make can be done in the GitHub interface. The first thing we need to go is edit the ```_config.yml``` file and make sure some of our build settings are good. Open up the file and click on the little pencil icon to edit the file. Here you can edit your ```Site Settings``` and ```Build Settings```.
 
-You should see the following information in the build settings:
+In the site settings, make sure to change your title, email, description, twitter name and github name. However, more importantly you want to change the base URL to the subpath of your site, such as:
 
+```/jekylldemo```
 
-If not, copy and paste the above and put it just below the build settings heading.
+And the URL of your hostname to:
 
+```localhost:4000```
+
+This is important as it tells your config file what your URL is supposed to be (i.e., ludicpress.github.io/jekylldemo).
+
+Next we need to check the Build Settings. This is usually the reason why your site might look funky on installation. You should see the following information in the build settings:
+
+```markdown: kramdown```  
+```theme: minima```  
+```plugins:```  
+```  - jekyll-feed```
+
+If not, copy and paste the above and put it just below the build settings heading. Make sure to commit your changes. Wait a minute or so and refresh the website. Your website changes should now be visible and look like a minimal static website.
+
+## Markdown
 
 
 ## Final Thoughts
