@@ -50,13 +50,40 @@ If all went well, the following information should display on your machine:
 
 At the time of writing this documentation Bash was at version 4.4.20.
 
-Next we need to install Ruby. Ruby is the programming language that will enable us to install Jekyll and create our static website. To install Ruby we will use a repository from BrightBox, which hosts optimized versions of Ruby for Ubuntu. In the command prompt type in the following commands and hit enter. Remember to wait for the prompt before entering each line of code:
+Next we need to install Ruby. Ruby is the programming language that will enable us to install Jekyll and create our static website. To install Ruby we will use a repository from BrightBox, which hosts optimized versions of Ruby for Ubuntu. In the command prompt type in the following commands and hit enter. Remember to wait for the prompt before entering each line of code.
 
+First:
 ```sudo apt-add-repository ppa:brightbox/ruby-ng```
+Second:
 ```sudo apt-get update```
+And third:
 ```sudo apt-get install ruby2.5 ruby2.5-dev build-essential dh-autoreconf```
 
+If prompted select yes or type ```y``` and hit enter. This may take several minutes to complete the whole installation process.
 
+Next, we need to install Ruby:
+
+```apt install ruby```
+
+If prompted select yes or type ```y``` and hit enter.
+
+Now that Ruby is installed we need to update our gems. Gems are packages within Ruby that make it easy for us to install programs, like Jekyll, with a simple command. To update our gems, type the following into the command prompt and hit enter:
+
+```gem update```
+
+Now that the gems have been updated, we can install Jekyll. In the command prompt type in the following command and hit enter:
+
+```gem install jekyll bundler```
+
+When the prompt returns we can check to see if Jekyll is running smoothly by entering the following command:
+
+```jekyll -v```
+
+The following message should display in your prompt:
+
+```jekyll 4.0.0```
+
+At the time of writing Jekyll was upgraded to 4.0, but there may be a later version depending on when you read this documentation. Now that you have completed the setup and installation of jekyll you can move on to the workshop!
 
 ## OS X Instructions
 On OS X, there are two ways to get wget and install it. The easiest is to install a package manager and use it to automatically install wget. There is a second method, discussed below, that involves compiling it.
