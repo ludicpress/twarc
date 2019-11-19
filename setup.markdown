@@ -52,14 +52,16 @@ At the time of writing this documentation Bash was at version 4.4.20.
 
 Next we need to install Ruby. Ruby is the programming language that will enable us to install Jekyll and create our static website. To install Ruby we will use a repository from BrightBox, which hosts optimized versions of Ruby for Ubuntu. In the command prompt type in the following commands and hit enter. Remember to wait for the prompt before entering each line of code.
 
-First:
+First:  
 ```sudo apt-add-repository ppa:brightbox/ruby-ng```
-Second:
+
+Second:  
 ```sudo apt-get update```
-And third:
+
+And third:  
 ```sudo apt-get install ruby2.5 ruby2.5-dev build-essential dh-autoreconf```
 
-If prompted select yes or type ```y``` and hit enter. This may take several minutes to complete the whole installation process.
+If prompted hit ```[ENTER]``` or type ```y```. This may take several minutes to complete the whole installation process.
 
 Next, we need to install Ruby:
 
