@@ -108,8 +108,36 @@ Next we need to check the Build Settings. This is usually the reason why your si
 If not, copy and paste the above and put it just below the build settings heading. Make sure to commit your changes. Wait a minute or so and refresh the website. Your website changes should now be visible and look like a minimal static website.
 
 ## Edit and Create Content
+To create new pages and posts for your website, you simply need to create a new file in your repository with a file name and markdown at the end of it. For example, to create a new page, click ```Create new file``` and type in your file name with markdown:
 
+```research.markdown```
 
+This tells your repository that this is a Markdown file that will be titled 'Research'. Next you will need to give the file instructions so it knows what kind of file it is. Within the file at the top of the document type or copy and paste the following:
+
+```---```  
+```layout: page```  
+```title: Research```  
+```permalink: /research/```  
+```---```
+
+For your research file it needs to know what type of layout it should use (i.e., page). Once that information is inserted you can enter the title of the page followed by the what you would like the permalink to be enclosed within two slashes. Note, the three dashes above and below these instructions are important.
+
+Below this information you can insert text, links, and whatever you like following the Markdown syntax. Check the [Resources page](https://ludicpress.github.io/staticsites/resources) to find more information on how to use Markdown in editing your pages.
+
+Creating posts is very similar to pages except for two small changes. When you create a post you ```Create a file``` within the ```_posts``` folder. 
+
+After you name your file with Markdown at the end you need to insert the following information at the top of your file. Note, the name you give your post is derived from the file name you give it (e.g., /welcome-to-the-jekyll-demo/):
+
+```---```  
+```layout: post```  
+```title:  "Welcome to the Jekyll Demo!"```  
+```date:   2019-11-19 12:00:13 -0500```  
+```categories: jekyll```  
+```---```
+
+Instead of ```page``` you insert ```post``` in the layout section. It's then important you title your post, provide a time and date, and then create a category for how you will categorize your post. This means as you accumulate posts users can search for them based on the categories you create.
+
+As with pages, you can insert, text, links and what you like following the Markdown syntax.
 
 ## Final Thoughts
-As you become increasingly comfortable with the command line, you will find wget a helpful addition to your digital research toolkit. If there is an entire set of archival documents that you want to download for text mining, if they’re arranged in a directory and are all together (which is not as common as one might think), a quick wget command will be quicker than scraping the links with Python. Similarly, you can then begin downloading things directly from your command line: programs, files, backups, etc. You will soon find that wget may be a first option for you to research all kinds of web content!
+
