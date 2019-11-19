@@ -21,7 +21,7 @@
 title: Static Sites
 email: christopher.young@utoronto.ca
 description: >- # this means to ignore newlines until "baseurl:"
-  This workshop and documentation on how to build a static site with Jekyll and GitHub pages hosted on Github, built for the University of Toronto Mississauga Library.
+  Documentation on how to build a static site with Jekyll and GitHub pages, hosted on GitHub, built for the University of Toronto Mississauga Library.
 baseurl: "/staticsites" # the subpath of your site, e.g. /blog
 url: "localhost:4000" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: ludicpress
