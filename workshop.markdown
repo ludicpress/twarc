@@ -39,12 +39,12 @@ This is the web address that your website folder will use to push its contents t
 
 Next we need to go into the folder using the ```cd``` command:
 
-```cd jekylldemo/
+```cd jekylldemo/```
 
 In your command line, type and enter:
 
-```git config --global user.email "you@example.com"
-```git config --global user.name "your name"
+```git config --global user.email "you@example.com"```
+```git config --global user.name "your name"```
 
 We need to track our files:
 
