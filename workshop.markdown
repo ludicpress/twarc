@@ -37,20 +37,28 @@ Now that we have a repository we need to use Git to upload our website folder. O
 
 This is the web address that your website folder will use to push its contents to the repository on GitHub. Copy this link and go back into your command line interface.
 
-Next we need to go into the folder using the ```cd``` command:
+Next we need to go into the website folder using the ```cd``` command:
 
 ```cd jekylldemo/```
 
-In your command line, type and enter:
+Next we need to track your files, but the terminal needs to know who is doing the tracking. In your command line, type and enter:
 
 ```git config --global user.email "you@example.com"```
 ```git config --global user.name "your name"```
 
-We need to track our files:
+Next we need to initialize our webfolder into a Git repository using the following command:
+
+```git init```
+
+To track our files we need to add them to git. To add all the files we use the following command. Note the space before the perdiod ``` .``` is important:
 
 ```git add .```
 
-This tracks all files in folder:
+To check and make sure all our files have been added, we can use the Git status command:
+
+```git status```
+
+Now that the files are tracked we can:
 
 ```git remote add origin [your copied URL]```
 
