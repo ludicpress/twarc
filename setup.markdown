@@ -7,6 +7,41 @@ permalink: /setup/
 Before we start the workshop component of how to build a static website with Jekyll and GitHub for digital research there is some preliminary setup we have to complete on your computer. There are several ways to install the different components we need to create a static Jekyll website on GitHub. We will approach setup through the command line. Depending on which operating system you use, setup can be straightforward or the most time consuming aspect of learning how to build a Jekyll website on GitHub pages. Below are installation instructions for Linux, Windows, and OS X users. Once Jekyll is installed on each system, the instructions will be the same for every user participating in the workshop.
 
 ## Linux Instructions
+Ubuntu ships with Python 3, as the default Python installation. Complete the following steps to install pip (pip3) for Python 3. Start by updating the package list using the following command in the command line:
+
+```sudo apt update```
+
+Once the package list is updated, use the following command to install pip for Python 3:
+
+```sudo apt install python3-pip```
+
+When prompted to select ```yes``` or to type ```y```, please do so to install the package. The command above will also install the dependencies required for building Python modules.
+
+Once the installation is complete, verify the installation by checking the pip version:
+
+```pip3 --version```
+
+The output version my vary, but it will look something like this:
+
+```pip 9.0.1. from /usr/lib/python3/dist-packages (python 3.6)```
+
+Now that pip is installed, we can use it to install twarc. Type and enter the following command into the command line:
+
+```pip3 install twarc```
+
+It will proceed to download the most recent version of twarc, which is wget 1.75. After the script stops running, and you are back to your main window, enter the following command into the terminal:
+
+```twarc```
+
+If twarc has installed, you will see almost a dozen lines of commands that end with the following statement:
+
+```twarc: error: the following arguments are required: command```
+
+This means twarc has installed and you need to use an argument after twarc. If twarc is not installed on your system it will respond with:
+
+```$ command not found.```
+
+At this point, however, twarc should be installed successfully. If it is not installed, go through each of the steps above to make sure you did not make a mistake installing pip.
 
 ## Windows Instructions
 To install twarc we have to activate the Windows Subsystem for Linux (WSL) and install a Linux distro (i.e., command line). For this workshop we will use the Ubuntu application on Windows, but first we have to activite the WSL.
@@ -62,7 +97,6 @@ This means twarc has installed and you need to use an argument after twarc. If t
 ```$ command not found.```
 
 At this point, however, twarc should be installed successfully. If it is not installed, go through each of the steps above to make sure you did not make a mistake installing pip.
-
 
 ## OS X Instructions
 To install twarc on OS X there are several dependencies we need to install, including Apple's Command Line Tools and Homebrew. This requires downloading XCode. If you have the App Store, you should be able to just download XCode.  If not, the following instructions will work.
