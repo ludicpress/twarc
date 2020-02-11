@@ -9,7 +9,7 @@ Before we start the workshop component of how to build a static website with Jek
 ## Linux Instructions
 
 ## Windows Instructions
-To install wget we have to activate the Windows Subsystem for Linux (WSL) and install a Linux distro (i.e., command line). For this workshop we will use the Ubuntu application on Windows, but first we have to activite the WSL.
+To install twarc we have to activate the Windows Subsystem for Linux (WSL) and install a Linux distro (i.e., command line). For this workshop we will use the Ubuntu application on Windows, but first we have to activite the WSL.
 
 To activate the WSL, open Powershell as an Administrator. To do this, type in Powershell in the Windows search bar in the bottom left corner of your screen. The application Windows Powershell Ise will appear. On the right-hand side of the window will be the option 'Run as administrator'. Select Run as administrator and enter your administrative login credentials if prompted. If you do not run Powershell as an administrator the next step will not work.
 
@@ -25,7 +25,43 @@ Click install and wait for the Ubuntu application for Windows to install. Once t
 
 When Ubuntu opens for the first time you will be propted to create a username and password. Create your username and hit enter. Create your password and hit enter. A re-enter password prompt will appear and you re-enter your password. Your username and password should now be created. Whenever you open Ubuntu and try to install software you will be prompted for your username and password.
 
-Now that Ubuntu is installed and you have created a username and password you can check to see 
+Now that Ubuntu is installed and you have created a username and password we can go ahead and install Pip. Pip is a package management system that simplifies installation and management of software packages written in Python, such as twarc. Pip is not installed by default on Ubuntu 18.04, but the installation is pretty straightforward.
+
+Ubuntu 18.04 ships with Python 3, as the default Python installation. Complete the following steps to install pip (pip3) for Python 3. Start by updating the package list using the following command:
+
+```sudo apt update```
+
+Once the package list is updated, use the following command to install pip for Python 3:
+
+```sudo apt install python3-pip```
+
+When prompted to select ```yes``` or to type ```y```, please do so to install the package. The command above will also install the dependencies required for building Python modules.
+
+Once the installation is complete, verify the installation by checking the pip version:
+
+```pip3 --version```
+
+The output version my vary, but it will look something like this:
+
+```pip 9.0.1. from /usr/lib/python3/dist-packages (python 3.6)```
+
+Now that pip is installed, we can use it to install twarc. Type and enter the following command into the command line:
+
+```pip3 install twarc```
+
+It will proceed to download the most recent version of twarc, which is wget 1.75. After the script stops running, and you are back to your main window, enter the following command into the terminal:
+
+```twarc```
+
+If twarc has installed, you will see almost a dozen lines of commands that end with the following statement:
+
+```twarc: error: the following arguments are required: command```
+
+This means twarc has installed and you need to use an argument after twarc. If twarc is not installed on your system it will respond with:
+
+```$ command not found.```
+
+At this point, however, twarc should be installed successfully. If it is not installed, go through each of the steps above to make sure you did not make a mistake installing pip.
 
 
 ## OS X Instructions
@@ -65,8 +101,8 @@ If twarc has installed, you will see almost a dozen lines of commands that end w
 
 ```twarc: error: the following arguments are required: command```
 
-This means twarc has installed and you need to use an argument after twarc. If wget is not installed on your system it will respond with:
+This means twarc has installed and you need to use an argument after twarc. If twarc is not installed on your system it will respond with:
 
 ```$ command not found.```
 
-At this point, however, wget should be installed successfully. If it is not installed, go through each of the steps above to make sure you did not make a mistake installing Homebrew.
+At this point, however, twarc should be installed successfully. If it is not installed, go through each of the steps above to make sure you did not make a mistake installing Homebrew.
