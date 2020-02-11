@@ -8,7 +8,7 @@ Does your research require you to build an archive of Twitter data? In this work
 
 For this workshop we are going to build an archive of Twitter data using the command line tool twarc. We are going to walk through a few exercises using twarc in your operating system’s command line interface: terminal for Linux and OS X and Ubuntu for Windows. If you have followed the setup instructions to install wget on your Linux, Windows, or OS X machines then you are ready to begin the workshop.
 
-## Warm Up
+## Configure and Warm Up
 
 
 ## Exercise 1:
