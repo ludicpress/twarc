@@ -22,13 +22,27 @@ You will then be prompted to enter your ```consumer secret```. Copy and paste th
 You will then be asked to authorize the application by entering a pin which will be provided by a URL printed in the command line. Go to the URL and type the pin into the command line. If all has gone well, you should receive a message stating ```Happy twarcing!```.
 
 ## Warm Up
-A good first exercise to warm up with if you have never used twarc before is the ```sample``` command. The sample command listens to Twitter's [statuses/sample](https://developer.twitter.com/en/docs/tutorials/consuming-streaming-data) API for a "random" sample of recent public statuses. To use the command, type and enter in the following command:
+All of the commands in twarc use the following logic when being used:
+
+```twarc [query] [text] [--filter] [text] > [file output]```
+
+Twarc has two main queries for gather tweets: ```search``` and ```filter```. The search query retrieves all tweets sent out over the past 7 days that meet your command's instructions. Twitter's search API imposes a 7 day cap which is why you cannot go further back in time. The filter query retrieves all tweets sent out as they happen. This means when you start the command you will need to leave it running on your computer until you have finished your study.
+
+For example, you could use the following command to gather tweets on the coronavirus from accounts tweeting in Toronto as they happen, where the query is ```filter``` and the filter is ```geocode```:
+
+```twarc filter coronavirus --geocode 43.653226,-79.383184,10mi > coronavirustweetsastheyhappen.jsonl```
+
+If you want to gather tweets for a few days, a month, or a year, you let the command run in the terminal for the period of time you require. If you want to gather tweets from the previous week, can can swap out the ```filter``` query for ```search```, so you're command looks like this:
+
+```twarc search coronavirus --geocode 43.653226,-79.383184,10mi > coronavirustweetspreviousweek.jsonl```
+
+A good first exercise though to warm up with if you have never used twarc before is the ```sample``` query. The sample command listens to Twitter's [statuses/sample](https://developer.twitter.com/en/docs/tutorials/consuming-streaming-data) API for a "random" sample of recent public statuses. To use the command, type and enter in the following command:
 
 ```twarc sample > sampletweets.jsonl```
 
-You only need to run the command for a few seconds so hit ```control``` or ```ctrl``` and ```c``` to stop the command. The sample command gathers tweets from all over the world, so a few seconds generates hundreds of tweets.
+You only need to run the command for a few seconds so hit ```control``` or ```ctrl``` and ```c``` to stop the command. The sample command gathers tweets from all over the world, so a few seconds generates hundreds of tweets (if not thousands!).
 
-You will have now created a jsonl file 
+
 
 ## Exercise 1: Filter by Term and Hashtag
 
