@@ -66,7 +66,7 @@ or
 You can also use language as Twitter attempts to code the language of a Tweet (note, this is not 100% accurate). You can limite your search to a particular language using an [ISO 639-1](https://en.wikipedia.org/wiki/List_of_ISO_639-1_codes) code:
 
 ```twarc filter coronavirus --geocode 45.501689,-73.567256,10mi --lang fr > coronavirustweetsastheyhappen.jsonl```  
-or
+or  
 ```twarc search coronavirus --geocode 45.501689,-73.567256,10mi --lang fr > coronavirustweetspreviousweek.jsonl```  
 
 As you can see from this example, we differentiated the search and filter commands by the location of Montreal and the language French. This type of filter can be useful when you're trying to get a sense of how a specific community in a geolocation tweets about a topic.
@@ -74,17 +74,13 @@ As you can see from this example, we differentiated the search and filter comman
 ## Exercise 2: Gather by Twitter Account
 Another strategy to gather Twitter data is by selecting specific Twitter accounts. As noted in the warm section, you can gather tweets as they happen using the ```filter``` query and the past week's tweets using the ```search```.
 
-For this exercise, we want to gather tweets sent out by specific organizations on the coronavirus, which are differentiated here for search and filter.
+For this exercise, we want to gather tweets sent out by specific organizations on the coronavirus, which are differentiated here for search and filter. Note, we use the ```follow``` command followed by the userid of the Twitter account. To get the userid of an account, [GetTwitterID](http://gettwitterid.com/) can generate a userid using the twitter handle as input. In the case of this example, we are gathering all tweets from the World Health Organization on the coronavirus:
 
-``````  
+```twarc filter coronavirus --follow 14499829, > coronavirustweetsbyorganizationlive.jsonl```  
 or  
-``````
+```twarc filter coronavirus --follow 14499829, > coronavirustweetsbyorganizationpast```
 
-
-
-
-
-## Exercise 3: Dehydrate and Hydrate Twitter Data
+As you can see, it will only scrape tweets sent by this organization when they tweet the term coronavirus. Some researchers may want to develop a list of accounts they want to follow on a topic and these can added to the ```follow``` function by adding a comma (```,```) with no spaces after each each userid.
 
 ## Final Thoughts
-There is still plenty more to learn with Jekyll and GitHub pages. There are also dozens, if not hundreds, of themes available to use instead of the Minima theme that comes with this tutorial. In addition, there are many digital research groups creating static page themes in Jekyll, such as the [Minimal Computing](https://github.com/minicomp) for digital editions, digital exhibits, and a range of other static sites for humanities and social science projects. If this is your first time with static sites, don't be dismayed by the learning curve or the simplicity. The payoff can be great depending on your digital research goals and projects.
+As you become increasingly comfortable with the command line, you will find twarc a helpful addition to your digital research toolkit. If there is a selection of twitter data that you want to download for text mining and analysis, a quick twarc command will be quicker than scraping the links manually. While this workshop focuses on a few of the commands, a fuller list with quick examples can be found at the [twarc GitHub project](https://github.com/DocNow/twarc).
