@@ -76,9 +76,9 @@ Another strategy to gather Twitter data is by selecting specific Twitter account
 
 For this exercise, we want to gather tweets sent out by specific organizations on the coronavirus, which are differentiated here for search and filter. Note, we use the ```follow``` command followed by the userid of the Twitter account. To get the userid of an account, [GetTwitterID](http://gettwitterid.com/) can generate a userid using the twitter handle as input. In the case of this example, we are gathering all tweets from the World Health Organization on the coronavirus:
 
-```twarc filter coronavirus --follow 14499829, > coronavirustweetsbyorganizationlive.jsonl```  
+```twarc filter coronavirus --follow 14499829 > coronavirustweetsbyorganizationlive.jsonl```  
 or  
-```twarc filter coronavirus --follow 14499829, > coronavirustweetsbyorganizationpast```
+```twarc search coronavirus --follow 14499829 > coronavirustweetsbyorganizationpast```
 
 As you can see, it will only scrape tweets sent by this organization when they tweet the term coronavirus. Some researchers may want to develop a list of accounts they want to follow on a topic and these can added to the ```follow``` function by adding a comma (```,```) with no spaces after each each userid.
 
