@@ -11,9 +11,9 @@ There are some fantastic resources out there to learn how to use twarc for gathe
 There are also some useful tutorials on how to use twarc by several libraries with a focus on digital research: 
 
 [University of Virginia Library's social media toolkit](http://digitalcollecting.lib.virginia.edu/toolkit/docs/social-media/)  
-[Temple University Library's webscraping guide](https://guides.temple.edu/c.php?g=123755&p=6097990)
-[Penn State University Library's Twitter research guide](https://guides.libraries.psu.edu/c.php?g=796631&p=5698003)
-[Carleton University Gould Library's Twitter API tutorial](http://gouldguides.carleton.edu/dataknowledgebase/twitterapi)
+[Temple University Library's webscraping guide](https://guides.temple.edu/c.php?g=123755&p=6097990)  
+[Penn State University Library's Twitter research guide](https://guides.libraries.psu.edu/c.php?g=796631&p=5698003)  
+[Carleton University Gould Library's Twitter API tutorial](http://gouldguides.carleton.edu/dataknowledgebase/twitterapi)  
 [McGill University Library's text data mining guide](https://libraryguides.mcgill.ca/c.php?g=702813&p=5064861)
 
 ## Ethics
