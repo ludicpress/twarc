@@ -36,3 +36,20 @@ A list of documentation options should appear if it has been installed. We have 
 
 ```brew doctor```
 
+With Homebrew installed, we now have to install twarc. This is now an easy step.
+
+```brew install twarc```
+
+It will proceed to download the most recent version of twarc, which is wget 1.75. After the script stops running, and you are back to your main window, enter the following command into the terminal:
+
+```twarc```
+
+If twarc has installed, you will see almost a dozen lines of commands that end with the following statement:
+
+```twarc: error: the following arguments are required: command```
+
+This means twarc has installed and you need to use an argument after twarc. If wget is not installed on your system it will respond with:
+
+```$ command not found.```
+
+At this point, however, wget should be installed successfully. If it is not installed, go through each of the steps above to make sure you did not make a mistake installing Homebrew.
