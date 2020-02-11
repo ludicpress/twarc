@@ -42,16 +42,49 @@ A good first exercise though to warm up with if you have never used twarc before
 
 You only need to run the command for a few seconds so hit ```control``` or ```ctrl``` and ```c``` to stop the command. The sample command gathers tweets from all over the world, so a few seconds generates hundreds of tweets (if not thousands!).
 
-To view the jsonl file you've created you can open the file with a text editor, such as [BBEdit](https://apps.apple.com/us/app/bbedit/id404009241?mt=12) on OSX or [notepad ++](https://notepad-plus-plus.org/downloads/) on Windows. When viewing the data 
+To view the jsonl file you've created you can open the file with a text editor, such as [BBEdit](https://apps.apple.com/us/app/bbedit/id404009241?mt=12) on OSX or [notepad ++](https://notepad-plus-plus.org/downloads/) on Windows.
 
 ## Exercise 1: Gather by Term and Hashtag
+Let's say you want to gather Twitter data on users around a given topic that is encapsulated by a hashtage or a series of terms. As noted in the warm up section, you can gather tweets as they happen using the ```filter``` query and the past week's tweets using the ```search```.
 
+For this exercise, we want to gather tweets on the coronavirus, which are differentiated here for search and filter:
+
+```twarc search coronavirus,corona virus > coronavirussearch.jsonl```  
+or  
+```twarc filter coronavirus,corona virus > coronavirussearch.jsonl```
+
+Note, we are using two different spellings of the coronavirus to capture the term as it's been used on Twitter.
+
+Using either of these commands will gather all tweets on Twitter using the term. However, we will want to delmit this information either by geolocation and/or language.
+
+As noted in the warm up section, you could use ```geocode``` to limit tweets by a geolocation, like Toronto:
+
+```twarc filter coronavirus --geocode 43.653226,-79.383184,10mi > coronavirustweetsastheyhappen.jsonl```  
+or  
+```twarc search coronavirus --geocode 43.653226,-79.383184,10mi > coronavirustweetspreviousweek.jsonl```  
+
+You can also use language as Twitter attempts to code the language of a Tweet (note, this is not 100% accurate). You can limite your search to a particular language using an [ISO 639-1](https://en.wikipedia.org/wiki/List_of_ISO_639-1_codes) code:
+
+```twarc filter coronavirus --geocode 45.501689,-73.567256,10mi --lang fr > coronavirustweetsastheyhappen.jsonl```  
+or
+```twarc search coronavirus --geocode 45.501689,-73.567256,10mi --lang fr > coronavirustweetspreviousweek.jsonl```  
+
+As you can see from this example, we differentiated the search and filter commands by the location of Montreal and the language French. This type of filter can be useful when you're trying to get a sense of how a specific community in a geolocation tweets about a topic.
 
 ## Exercise 2: Gather by Twitter Account
+Another strategy to gather Twitter data is by selecting specific Twitter accounts. As noted in the warm section, you can gather tweets as they happen using the ```filter``` query and the past week's tweets using the ```search```.
+
+For this exercise, we want to gather tweets sent out by specific organizations on the coronavirus, which are differentiated here for search and filter.
+
+``````  
+or  
+``````
 
 
-## Exercise 3: Gather by Location
 
+
+
+## Exercise 3: Dehydrate and Hydrate Twitter Data
 
 ## Final Thoughts
 There is still plenty more to learn with Jekyll and GitHub pages. There are also dozens, if not hundreds, of themes available to use instead of the Minima theme that comes with this tutorial. In addition, there are many digital research groups creating static page themes in Jekyll, such as the [Minimal Computing](https://github.com/minicomp) for digital editions, digital exhibits, and a range of other static sites for humanities and social science projects. If this is your first time with static sites, don't be dismayed by the learning curve or the simplicity. The payoff can be great depending on your digital research goals and projects.
