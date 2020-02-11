@@ -42,15 +42,15 @@ A good first exercise though to warm up with if you have never used twarc before
 
 You only need to run the command for a few seconds so hit ```control``` or ```ctrl``` and ```c``` to stop the command. The sample command gathers tweets from all over the world, so a few seconds generates hundreds of tweets (if not thousands!).
 
+To view the jsonl file you've created you can open the file with a text editor, such as [BBEdit](https://apps.apple.com/us/app/bbedit/id404009241?mt=12) on OSX or [notepad ++](https://notepad-plus-plus.org/downloads/) on Windows. When viewing the data 
+
+## Exercise 1: Gather by Term and Hashtag
 
 
-## Exercise 1: Filter by Term and Hashtag
+## Exercise 2: Gather by Twitter Account
 
 
-## Exercise 2: Filter by Twitter Account
-
-
-## Exercise 3: Filter by Location
+## Exercise 3: Gather by Location
 
 
 ## Final Thoughts
