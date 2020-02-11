@@ -22,15 +22,21 @@ You will then be prompted to enter your ```consumer secret```. Copy and paste th
 You will then be asked to authorize the application by entering a pin which will be provided by a URL printed in the command line. Go to the URL and type the pin into the command line. If all has gone well, you should receive a message stating ```Happy twarcing!```.
 
 ## Warm Up
+A good first exercise to warm up with if you have never used twarc before is the ```sample``` command. The sample command listens to Twitter's [statuses/sample](https://developer.twitter.com/en/docs/tutorials/consuming-streaming-data) API for a "random" sample of recent public statuses. To use the command, type and enter in the following command:
+
+```twarc sample > sampletweets.jsonl```
+
+You only need to run the command for a few seconds so hit ```control``` or ```ctrl``` and ```c``` to stop the command. The sample command gathers tweets from all over the world, so a few seconds generates hundreds of tweets.
+
+You will have now created a jsonl file 
+
+## Exercise 1: Filter by Term and Hashtag
 
 
-## Exercise 1:
+## Exercise 2: Filter by Twitter Account
 
 
-## Exercise 2:
-
-
-## Exercise 3:
+## Exercise 3: Filter by Location
 
 
 ## Final Thoughts
